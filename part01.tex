@@ -23,16 +23,15 @@ The idea is not to use the tools as either/or, but more in sync with each other.
 Jupyter notebooks can also be used in Authorea to store images and analyses. This is a plus point, as everything then keeps in sync. Besides, if you write in Authorea you can draw in bibtex citations and create bibliographies on the fly and create neat tables easily that are very helpful. 
 
 Steps:
-\begin{enumerate}
-\item Create authorea paper first
-\item Create github bridge
-\item put the bridge in a dropbox folder
-\item create an overleaf paper and save in dropbox folder
-\item Interact with github with Authorea and dropbox with Overleaf (save to dropbox)
-\item upload to Overleaf from github
-\item in Authorea remove the old folder from overleaf if you like
-\end{enumerate}
+\begin{itemize}
+\item Create an Authorea paper with LaTeX input
+\item Create an Overleaf paper 
+\item For both create git bridges
+\item keep the git folders as subfolders in the same superfolder
+\item Transfer individual .tex files across the two folders
+\item Use git pull, git commit  and git push to keep everything in sync
+\end{itemize}
 
 
-There is an advantage of working this way. On the one hand you can route any section that you may have directly to Overleaf for presentation. On the other hand, you can store part of the paper that you are working on or writing within Authorea itself. This is how you can work between the two powerful systems. 
+Not the most efficient thing to do but it is the simplest solution that I have found. A git submodule or merge as subtree does not work between Overleaf and Authorea. The other alternative is to use a Dropbox to download folders from Overleaf and then use Github to upload files from Authorea to Overleaf. 
 
